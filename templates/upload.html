@@ -1,0 +1,18 @@
+<form action="/" method="POST" enctype="multipart/form-data">
+    <div style="">
+        <h3 style="color: cadetblue;"></h3>
+        <ol>
+
+        </ol>
+    </div>
+    <div style="margin-top: 10px">
+        <label for="file">File:</label>
+        <input type="file" id="file" name="file"><br />
+        <button style="margin-top: 10px; background-color: rebeccapurple; width: 20px; height: 20px ;color: lightcoral; border: none">Upload</button>
+        {% if chart != null%}
+            <div id="chart"> <embed type="image/svg+xml" src= {{ chart|safe }} /> </div>
+        {% endif %}
+
+
+    </div>
+</form>
